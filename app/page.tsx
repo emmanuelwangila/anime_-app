@@ -1,10 +1,9 @@
 import AnimeCard, { AnimeProp } from "@/components/AnimeCard";
 import LoadMore from "../components/LoadMore";
-import { data } from "./_data";
 import { fetchAnimation } from "./action";
 
 async function Home() {
-  await fetchAnimation();
+  const data = await fetchAnimation(1);
 
   return (
     <main className="sm:p-16 py-16 px-8 flex flex-col gap-10">
