@@ -4,13 +4,6 @@ function Hero() {
   return (
     <header className="bg-hero bg-center bg-cover bg-no-repeat sm:p-16 py-16 px-8 flex justify-center lg:items-center max-lg:flex-col w-full sm:gap-16 gap-0">
       <div className="flex-1 flex flex-row justify-center  gap-5">
-        <Image
-          src=""
-          alt=""
-          width={101}
-          height={96}
-          className="object-contain"
-        />
         <h1 className="sm:text-6xl   text-5xl text-blue-500 lg:max-w-lg font-bold leading-[120%]">
           Dive into a set of
           <span className="text-teal-500">
