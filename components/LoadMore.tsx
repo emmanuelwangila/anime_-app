@@ -1,12 +1,17 @@
 "use client";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 function LoadMore() {
   const { ref, inView } = useInView();
+  const [data, setData] = useState([]);
 
-  useEffect(() => {});
+  useEffect(() => {
+    if (inView) {
+      alert("load more animes");
+    }
+  }, [inView]);
   return (
     <>
       <section className="flex justify-center items-center w-full">
